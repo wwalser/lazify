@@ -1,0 +1,38 @@
+{
+  "name": "Lazify",
+  "description": "Makes things lazy.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/wwalser/lazify",
+  "author": {
+    "name": "Wesley Walser",
+    "email": "waw325@gmail.com",
+    "url": "https://github.com/wwalser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/waw325/lazify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wwalser/lazify/issues"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/wwalser/lazify/blob/master/LICENSE-GPL"
+    }
+  ],
+  "main": "lib/Lazify",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
