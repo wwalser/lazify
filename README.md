@@ -14,7 +14,7 @@ lazyThing.exec()
 
 //Create a lazy version of a jQuery like object with methods that return an instance
 //of the original object
-var lazyQuery = lazify(jQuery, ['appendTo']);
+var lazyQuery = lazify($, ['appendTo']);
 lazyQuery('#any.selector').appendTo('#another.query');
 //nothing has occurred yet
 lazyQuery.exec();
