@@ -2,7 +2,7 @@
 
 var lazify = require('../lib/Lazify.js');
 
-exports['lazify'] = {
+exports['basic'] = {
 	setUp: function(done) {
 		// setup here
 		done();
@@ -46,3 +46,29 @@ exports['lazify'] = {
 		test.done();
 	},
 };
+
+exports['config'] = {
+	setUp: function(done) {
+		// setup here
+		done();
+	},
+	'config methods are created': function(test){
+		test.expect(1);
+		var lazy = lazify(function(){}, ['appendTo']);
+		test.equal(typeof lazy.appendTo, 'function', 'Methods passed to config should get created on lazy object.');
+		test.done();
+	},
+	'config methods called will be execed': function(test){
+		test.expect(3);
+		var nonLazyObject = {
+			appendTo: function(){
+				test.ok(true);
+				return nonLazyObject;
+			}
+		};
+		var lazyObject = lazify(nonLazyObject, ['appendTo']);
+		lazyObject.appendTo().appendTo().appendTo().exec();
+		test.done();
+	}
+};
+
