@@ -24,8 +24,8 @@ lazyQuery.exec();
 For Browser:
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/wwalser/lazify/master/dist/grunt-sample.min.js
-[max]: https://raw.github.com/wwalser/lazify/master/dist/grunt-sample.js
+[min]: https://raw.github.com/wwalser/lazify/master/dist/Lazify.min.js
+[max]: https://raw.github.com/wwalser/lazify/master/dist/Lazify.js
 Same API, in a browser, you can figure it out.
 
 ## Documentation
